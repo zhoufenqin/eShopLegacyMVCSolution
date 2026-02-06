@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = eShopPorted
-build_property.ProjectDir = C:\Source\dotnet-mnm-main (1)\dotnet-mnm-main\dotnet-architecture\eShopModernizing\eShopLegacyMVCSolution\eShopPorted\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 

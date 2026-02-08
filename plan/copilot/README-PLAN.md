@@ -1,19 +1,19 @@
-# How to Use the Modernization Playbook
+# How to Use the Modernization Plan
 
 ## What Is This?
 
-`PLAYBOOK.md` is a structured guide for migrating legacy framework applications to modern platform versions. It captures a proven approach — surgical, incremental, verification-driven — that produces clean migrations with minimal risk.
+`PLAN.md` is a structured guide for migrating legacy framework applications to modern platform versions. It captures a proven approach — surgical, incremental, verification-driven — that produces clean migrations with minimal risk.
 
 It is designed to be used as a **prompt/context document** for AI coding assistants, ensuring they follow the same disciplined approach every time.
 
 ## Quick Start
 
-### 1. Point your AI assistant at the playbook
+### 1. Point your AI assistant at the plan
 
-When starting a migration task, include the playbook as context. For example:
+When starting a migration task, include the plan as context. For example:
 
 ```
-Follow the approach described in PLAYBOOK.md to migrate this project
+Follow the approach described in PLAN.md to migrate this project
 from [source framework] to [target framework].
 ```
 
@@ -24,19 +24,19 @@ The assistant will use the phased approach, eval criteria, and anti-patterns as 
 Always ask the assistant to analyze before implementing:
 
 ```
-Analyze this project following Phase 0 of the playbook. 
+Analyze this project following Phase 0 of the plan. 
 Create a migration plan before making any changes.
 ```
 
 Review the plan. Confirm the scope. Then proceed:
 
 ```
-Implement the migration following the playbook phases.
+Implement the migration following the plan phases.
 ```
 
 ### 3. Verify at each phase
 
-The playbook defines **eval criteria** for every phase — these are the conditions that must be true before moving on. The assistant should check these automatically, but you can enforce them:
+The plan defines **eval criteria** for every phase — these are the conditions that must be true before moving on. The assistant should check these automatically, but you can enforce them:
 
 ```
 Before moving to the next phase, verify all eval criteria are met.
@@ -53,11 +53,11 @@ Before moving to the next phase, verify all eval criteria are met.
 
 - Greenfield rewrites (building from scratch, not migrating)
 - Minor version upgrades with no breaking changes
-- Projects that need architectural redesign (the playbook preserves existing architecture)
+- Projects that need architectural redesign (the plan preserves existing architecture)
 
-## Customizing the Playbook
+## Customizing the Plan
 
-The playbook is intentionally **framework-agnostic**. The phases and principles apply regardless of:
+The plan is intentionally **framework-agnostic**. The phases and principles apply regardless of:
 
 - Programming language
 - Web framework (MVC, API, SPA backend)
@@ -78,7 +78,7 @@ To adapt it for a specific technology stack, you can add a companion document wi
 | ... | ... |
 ```
 
-## Key Behaviors the Playbook Enforces
+## Key Behaviors the Plan Enforces
 
 1. **Minimum viable changes** — Only touch what must change for the new platform. Don't refactor, don't improve, don't modernize beyond what's required.
 
@@ -92,7 +92,7 @@ To adapt it for a specific technology stack, you can add a companion document wi
 
 ## Eval Criteria Summary
 
-The playbook succeeds when ALL of these are true:
+The plan succeeds when ALL of these are true:
 
 - [ ] Project builds from clean state with 0 errors
 - [ ] Application starts without runtime exceptions  

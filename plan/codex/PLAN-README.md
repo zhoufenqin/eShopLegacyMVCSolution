@@ -1,29 +1,29 @@
-# Codex Modernization Playbook
+# Codex Modernization Plan
 
-A reusable methodology for AI-assisted codebase modernization with Codex. Use this playbook to give Codex a consistent, high-quality approach to migrating legacy projects.
+A reusable methodology for AI-assisted codebase modernization with Codex. Use this plan to give Codex a consistent, high-quality approach to migrating legacy projects.
 
 ## What this is
 
-`PLAYBOOK.md` is a phased methodology that Codex can follow for migrations. It is technology-agnostic and focuses on ordering, verification gates, and delivery discipline.
+`PLAN.md` is a phased methodology that Codex can follow for migrations. It is technology-agnostic and focuses on ordering, verification gates, and delivery discipline.
 
 ## How to use it in a new project
 
-### Step 1: Add the playbook
+### Step 1: Add the plan
 
-Copy `PLAYBOOK.md` into the root of the project you want to modernize, or keep it in a `playbooks/codex` folder and reference it.
+Copy `PLAN.md` into the root of the project you want to modernize, or keep it in a `plan/codex` folder and reference it.
 
 ### Step 2: Create `AGENTS.md`
 
-Codex follows `AGENTS.md`. Add one at the project root with instructions to use the playbook. Example:
+Codex follows `AGENTS.md`. Add one at the project root with instructions to use the plan. Example:
 
 ```markdown
 # Codex Instructions
 
 Before starting any modernization or migration work, read and follow
-playbooks/codex/PLAYBOOK.md.
+plan/codex/PLAN.md.
 
 When creating a migration plan, use the phase structure and step
-ordering from the playbook. Do not skip the verification gates.
+ordering from the plan. Do not skip the verification gates.
 ```
 
 ### Step 3: Provide the migration goal
@@ -31,7 +31,7 @@ ordering from the playbook. Do not skip the verification gates.
 Start the request with a clear target, for example:
 
 > Migrate this project from [old framework] to [new framework].
-> Follow playbooks/codex/PLAYBOOK.md.
+> Follow plan/codex/PLAN.md.
 
 Codex will then:
 
@@ -62,4 +62,4 @@ Add project-specific steps or gates if needed, for example:
 - Lint/format check
 - API smoke tests
 
-Keep the playbook focused on migration behavior, not refactoring.
+Keep the plan focused on migration behavior, not refactoring.

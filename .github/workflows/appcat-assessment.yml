@@ -1,0 +1,25 @@
+name: AppCAT Assessment
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  assess:
+    runs-on: windows-latest
+    name: Assess app with AppCAT
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Run AppCAT Assessment
+        uses: kpantos/dotnet-appcat-action@v5
+        with:
+          source: 'Solution'
+          path: './eShopLegacyMVC.sln'
+          target: 'AppService.Windows'
+          serializer: 'HTML'
